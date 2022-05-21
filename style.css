@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap');
+
+*, ::before, ::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    --main-font: 'Red Hat Display', sans-serif;
+}
+
+img{
+    width: 100%;
+}
+
+p{
+    color: hsl(224, 23%, 55%);
+}
+
+body{
+    background-image: url("./images/pattern-background-mobile.svg");
+    background-repeat: no-repeat;
+    background-color: hsl(225, 100%, 94%);
+    font-family: var(--main-font);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    max-width: 1440px;
+}
+
+.main{
+    max-width: 270px;
+    background-color: white;
+    padding: 1em;
+    border-radius: 15px;
+    margin: 1em auto;
+    box-shadow: 0px  12px 20px 0px hsla(245, 75%, 52%, 0.29);
+}
+
+.main-img{
+    margin: -1em;
+}
+
+.main-img img{
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+} 
+
+.main h1{
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 2em;
+    color: hsl(223, 47%, 23%);
+}
+
+.main-text{
+    font-size: 0.85rem;
+    text-align: center;
+    line-height: 1.6;
+    margin: 1em 0.5em 1.2em 0.5em;
+
+}
+
+.pricing{
+    display: flex;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    padding: 0.8em;
+    border-radius: 10px;
+    margin-bottom: 1.2em ;
+}
+
+.pricing img{
+    max-width: 40px;
+    margin-right: 1em;
+}
+
+.pricing h2{
+    font-size: 0.75rem;
+}
+
+.pricing p{
+    font-size: 0.8rem;
+}
+
+
+.pricing a{
+    font-size: 0.7rem;
+    font-weight: 700;
+    margin-left: auto;
+    color: hsl(245, 75%, 52%);
+    
+}
+
+.pricing a:hover{
+    opacity: 0.7;
+    text-decoration: none;
+}
+
+.payment button{
+    width: 100%;
+    border: none;
+    color: white;
+    background-color: hsl(245, 75%, 52%);
+    padding: 0.9em;
+    border-radius: 10px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0px  12px 20px 0px hsla(245, 75%, 52%, 0.29);
+    transition: opacity 0.5s ease;
+}
+
+.payment button:hover{
+    opacity: 0.7;
+}
+
+.payment p{
+    width: max-content;
+    margin: 1.5em auto 0.5em auto ;
+    font-size: 0.8rem;
+    font-weight: 700;
+    transition: color 0.5s ease;
+    cursor: pointer;
+}
+
+.payment p:hover{
+    color: hsl(223, 47%, 23%);
+}
+
+@media(min-width: 376px){
+
+    body{
+        background-image: url("./images/pattern-background-desktop.svg");
+    }
+    .main{
+        width: 80%;
+        max-width: 400px;
+    }
+}
